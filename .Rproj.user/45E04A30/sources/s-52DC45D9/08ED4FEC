@@ -3,7 +3,7 @@
     "path": "~/Downloads/olliejay-website/content/post/2022-01-19-first-blog/index.Rmd",
     "project_path": "content/post/2022-01-19-first-blog/index.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "3608051767",
     "contents": "",
     "dirty": false,
     "created": 1642637997324.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "8,32",
-        "scrollLine": "5"
+        "cursorPosition": "1,29",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1642638315,
+    "lastKnownWriteTime": 1642639401,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1642638315620,
+    "last_content_update": 1642639401368,
     "read_only": false,
     "read_only_alternatives": []
 }
