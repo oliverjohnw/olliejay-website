@@ -3,4 +3,6 @@ date: "2016-05-05T21:48:51-07:00"
 title: About
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium).
+Welcome, all! I'm John Oliver, a 24 year old recently-graduated young who is currently located out of La Crosse, WI.  I've decided to maintain a personal website where I will be writing blogs on anything that relates to  data science. Feel free to connect with me at my personal email [@johnoliver616], or reach out on my Github or Twitter page (links displayed in home page).
+
+
