@@ -1,9 +1,12 @@
 ---
 title: "Lets see if this works"
 author: "John Oliver"
-date: 2020-12-01T21:13:14-05:00
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+date: '2020-12-01T21:13:14-05:00'
+categories: R
+tags:
+- R Markdown
+- plot
+- regression
 ---
 
 ```{r setup, include=FALSE}
@@ -23,7 +26,7 @@ You can embed an R code chunk like this:
 ```{r cars}
 summary(cars)
 fit <- lm(dist ~ speed, data = cars)
-fi
+fit
 ```
 
 # Including Plots
