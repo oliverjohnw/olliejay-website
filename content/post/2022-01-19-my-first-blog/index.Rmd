@@ -1,10 +1,7 @@
 ---
-title: "My First Blog""
+title: "My First Blog"
 author: "OllieJay"
 date: '2022-01-19'
-slug: my-first-blog
-categories: R
-tags: R
 ---
 
 Hello, hello, hello. Welcome to my personal data science space. This is website is something new that I wanted to try out to document my learning process as I try to break into the world of data science. I'm envisioning this page as a place where I write blogs about different techniques, languages, etc. Basically, I am just going ot document and apply what I've been learning as I go.
