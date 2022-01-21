@@ -97,6 +97,11 @@ The plot leaves me with two thoughts. First, I am suprised to see the U.S. color
 
 Secondly, what makes beans grown in Central Africa, but not Northern Africa? I'm assuming it's because there is not enough precipitaion in these countries. Similarly, this theory may be applied to the Middle Easter countries, where it's hot and dry. I guess plants do need water to grow, right? 
 
+
+# Wrap-Up
+
+Relatively short analysis here. I just found out about #TidyTuesday yesterday, so I didn't have much time to dive further. If I did, I would look into which countries are producing beans that have the highest rating. This data set also contained information on the ingredients contained in each candy bar. I might revisit this in the future and try to do some cool analysis with that. I've never created a word map before, so that might be my goal! 
+
 Follow my code at https://github.com/oliverjohnw/tidy-tuesdays/blob/main/cocoa_beans.R. 
 
 
