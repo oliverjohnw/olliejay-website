@@ -88,7 +88,7 @@ ggplot() +
 
 Well, my suspicion was partially correct! We see that beans are grown and sourced in from the Northern part of South America. It also seems as if Asia, Australia, Central Africa, and the Southern part of North America may be a hot spot as well. In fact, hot spot might be the best phrase to describe bean growth. It appears that all cocoa beans are sourced in from warm areas, around the equator. Displayed below are the top 10 bean-growing countries.
 
-```{r}
+```{r, echo = F}
 kable(head(country_n,10))
 ```
 
@@ -96,6 +96,8 @@ kable(head(country_n,10))
 The plot leaves me with two thoughts. First, I am suprised to see the U.S. colored red. I've never heard of cocoa bean growth here. A quick google search tells me that beans grow in Hawaii, California and in Puerto Rico. Makes sense, if we stick with the hot theme. 
 
 Secondly, what makes beans grown in Central Africa, but not Northern Africa? I'm assuming it's because there is not enough precipitaion in these countries. Similarly, this theory may be applied to the Middle Easter countries, where it's hot and dry. I guess plants do need water to grow, right? 
+
+Follow my code at https://github.com/oliverjohnw/tidy-tuesdays/blob/main/cocoa_beans.R. 
 
 
 
