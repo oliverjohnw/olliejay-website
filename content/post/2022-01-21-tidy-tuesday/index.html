@@ -18,7 +18,102 @@ tags: null
 <p>The process of constructing the world’s perfect chocolate bar starts with cocoa beans. The manufactures turn these beans into the end product - a delicious candy bar. It’s easy to praise the manufacturer when looking at the end product. In my eyes, however, the real heroes are the people growing the cocoa beans. Without them, this process would never occur!</p>
 <p>That being said, I decided to look into where exactly these cocoa beans were being grown. To be honest, when I started this analysis, I had no idea where this process occurs. I assumed South America? To address my ignorance, I decide to produce a map that would tell me which countries grew beans and which did not.</p>
 <p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>Well, my suspicion was partially correct! We see that beans are grown and sourced in from the Northern part of South America. It also seems as if Asia, Australia, Central Africa, and the Southern part of North America may be a hot spot as well. In fact, hot spot might be the best phrase to describe bean growth. It appears that all cocoa beans are sourced in from warm areas, around the equator. A quick group_by() call tells me that the top 5 cocoa been producing countries are Venezuela (253 companies sourcing their beans), Peru (244 companies), Dominican Republic (226 companies), Ecuador (219 companies), and Madagascar (177 companies).</p>
-<p>This plot leaves me with two thoughts. First, I am suprised to see the U.S. colored red. I’ve never heard of cocoa bean growth here. A quick google search tells me that beans grow in Hawaii, California and in Puerto Rico. Makes sense, if we stick with the hot theme.</p>
+<p>Well, my suspicion was partially correct! We see that beans are grown and sourced in from the Northern part of South America. It also seems as if Asia, Australia, Central Africa, and the Southern part of North America may be a hot spot as well. In fact, hot spot might be the best phrase to describe bean growth. It appears that all cocoa beans are sourced in from warm areas, around the equator. Displayed below are the top 10 bean-growing countries.</p>
+<pre class="r"><code>kable(head(country_n,10))</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Country
+</th>
+<th style="text-align:right;">
+Number of Companies
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Venezuela
+</td>
+<td style="text-align:right;">
+253
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Peru
+</td>
+<td style="text-align:right;">
+244
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Dominican Republic
+</td>
+<td style="text-align:right;">
+226
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ecuador
+</td>
+<td style="text-align:right;">
+219
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Madagascar
+</td>
+<td style="text-align:right;">
+177
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nicaragua
+</td>
+<td style="text-align:right;">
+100
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bolivia
+</td>
+<td style="text-align:right;">
+80
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Colombia
+</td>
+<td style="text-align:right;">
+79
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+United Republic of Tanzania
+</td>
+<td style="text-align:right;">
+79
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Brazil
+</td>
+<td style="text-align:right;">
+78
+</td>
+</tr>
+</tbody>
+</table>
+<p>The plot leaves me with two thoughts. First, I am suprised to see the U.S. colored red. I’ve never heard of cocoa bean growth here. A quick google search tells me that beans grow in Hawaii, California and in Puerto Rico. Makes sense, if we stick with the hot theme.</p>
 <p>Secondly, what makes beans grown in Central Africa, but not Northern Africa? I’m assuming it’s because there is not enough precipitaion in these countries. Similarly, this theory may be applied to the Middle Easter countries, where it’s hot and dry. I guess plants do need water to grow, right?</p>
 </div>

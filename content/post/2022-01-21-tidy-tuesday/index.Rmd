@@ -17,6 +17,7 @@ library(rnaturalearth)
 library(rnaturalearthdata)
 library(rgeos)
 library(RColorBrewer)
+library(kableExtra)
 ```
 
 
@@ -70,8 +71,11 @@ country_n <- countries_fixed %>%
   group_by(updated_countries) %>% 
   summarise(number_comps = n())
 
-country_n %>% 
-  arrange(desc(number_comps))
+colnames(country_n) <- c("Country", "Number of Companies")
+
+country_n <- country_n %>% 
+  arrange(desc(`Number of Companies`))
+
 ```
 
 ```{r, echo = F}
@@ -82,9 +86,14 @@ ggplot() +
   theme(panel.background = element_rect(fill = "aliceblue"))
 ```
 
-Well, my suspicion was partially correct! We see that beans are grown and sourced in from the Northern part of South America. It also seems as if Asia, Australia, Central Africa, and the Southern part of North America may be a hot spot as well. In fact, hot spot might be the best phrase to describe bean growth. It appears that all cocoa beans are sourced in from warm areas, around the equator. A quick group_by() call tells me that the top 5 cocoa been producing countries are Venezuela (253 companies sourcing their beans), Peru (244 companies), Dominican Republic (226 companies), Ecuador (219 companies), and Madagascar (177 companies).		
+Well, my suspicion was partially correct! We see that beans are grown and sourced in from the Northern part of South America. It also seems as if Asia, Australia, Central Africa, and the Southern part of North America may be a hot spot as well. In fact, hot spot might be the best phrase to describe bean growth. It appears that all cocoa beans are sourced in from warm areas, around the equator. Displayed below are the top 10 bean-growing countries.
 
-This plot leaves me with two thoughts. First, I am suprised to see the U.S. colored red. I've never heard of cocoa bean growth here. A quick google search tells me that beans grow in Hawaii, California and in Puerto Rico. Makes sense, if we stick with the hot theme. 
+```{r}
+kable(head(country_n,10))
+```
+
+
+The plot leaves me with two thoughts. First, I am suprised to see the U.S. colored red. I've never heard of cocoa bean growth here. A quick google search tells me that beans grow in Hawaii, California and in Puerto Rico. Makes sense, if we stick with the hot theme. 
 
 Secondly, what makes beans grown in Central Africa, but not Northern Africa? I'm assuming it's because there is not enough precipitaion in these countries. Similarly, this theory may be applied to the Middle Easter countries, where it's hot and dry. I guess plants do need water to grow, right? 
 
