@@ -1,8 +1,10 @@
 ---
 title: "Ordination Techniques - An Explanation and Implementation"
 author: "John Oliver"
-date: "1/27/2022"
-output: html_document
+date: '2022-01-27'
+slug: ordination-techniques-an-explanation-and-implementation
+categories: null
+tags: null
 ---
 
 <script src="Ordination Techniques - An Explnation and Implementation_files/header-attrs/header-attrs.js"></script>
@@ -22,6 +24,7 @@ Again, not that difficult. We clearly want to choose the orange or the pineapple
 <p>The answer: ordination techniques. Ordination techniques allow us to visualize our <em>n</em> starting variables in a desired amount of dimensions. In most cases, the desirable amount of dimensions is too. In other words, ordination allows us to view our <em>n</em> starting variables in 2 dimensions. So rather than twisting your brain trying to create an <em>n</em> dimensional plot, we can simply visualize as a scatter plot in 2 dimensions.</p>
 <p>Each dot within this scatterplot will therefore refer to one observation from our data set. In my examples, this would mean that each dot would represent one football player, or one type of food. Observations that are closer to each other within the graph can be assumed to have similar levels of the examined <em>n</em> variables. Converesely, observations that appear farther apart will have differing levels. Lets take a look at an example.</p>
 <p>Let’s go back to the food set and say that we’re now interested in Vitamin C, calories, vitamin D, protein, and carbs. I’ll go into depth later on about the types of ordination techniques but for now, let’s just say I’m using a technique called Principle Component Analysis (PCA). Here’s how the method of PCA takes our original 5 variables and plots it in 2 dimensions.</p>
-<p>We would expect all healthier foods to contain somewhat similar levels of nutrients. We would probably also assume that they have differing levels of nutrients than unhealthy foods do. This is shown in the graph above! We can see some clear seperation here. Notice how on the greater side of the x-axis (PC1), we see the healthy foods - pineapple, apple, orange. As we decrease in value on the x-axis (PC1), we see the unhealthy foods - pizza, burger. Healthier foods are clustering near each other, while unhealthy foods are clustering near each other.</p>
+<p><img src="/post/2022-01-27-ordination-techniques-an-explanation-and-implementation/Ordination%20Techniques%20-%20An%20Explnation%20and%20Implementation_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+We would expect all healthier foods to contain somewhat similar levels of nutrients. We would probably also assume that they have differing levels of nutrients than unhealthy foods do. This is shown in the graph above! We can see some clear seperation here. Notice how on the greater side of the x-axis (PC1), we see the healthy foods - pineapple, apple, orange. As we decrease in value on the x-axis (PC1), we see the unhealthy foods - pizza, burger. Healthier foods are clustering near each other, while unhealthy foods are clustering near each other.</p>
 <p>Ordination techniques are a great method of concluding similarities and differences between our observations, based on the variables they contain. In what would be a very daunting task of considering a plethora of nutrients, we can simply carry out an ordination technique and get a general consensus based on the visualizaiton.</p>
 </div>

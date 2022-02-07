@@ -1,8 +1,10 @@
 ---
 title: "Ordination Techniques - An Explanation and Implementation"
 author: "John Oliver"
-date: "1/27/2022"
-output: html_document
+date: '2022-01-27'
+slug: ordination-techniques-an-explanation-and-implementation
+categories: null
+tags: null
 ---
 
 ```{r setup, include=FALSE}
@@ -55,7 +57,7 @@ Each dot within this scatterplot will therefore refer to one observation from ou
 
 Let's go back to the food set and say that we're now interested in Vitamin C, calories, vitamin D, protein, and carbs. I'll go into depth later on about the types of ordination techniques but for now, let's just say I'm using a technique called Principle Component Analysis (PCA). Here's how the method of PCA takes our original 5 variables and plots it in 2 dimensions.
 
-```{r}
+```{r, include = T}
 df3 <- data.frame(Food = c("Pineapple", "Apple", "Orange", "Pizza",
                            "Burger"),
                  vitaminC = c(600, 600, 600, 115,107),
