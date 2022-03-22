@@ -2,9 +2,12 @@
 title: "My Hello World Blog"
 author: "R package build"
 date: '2022-03-22'
-slug: my-hello-world-blog
+output:
+  html_document:
+    df_print: paged
 categories: []
 tags: []
+slug: my-hello-world-blog
 ---
 
 ```{r setup, include=FALSE}
