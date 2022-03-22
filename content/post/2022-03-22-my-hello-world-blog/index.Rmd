@@ -1,0 +1,18 @@
+---
+title: "My Hello World Blog"
+author: "R package build"
+date: '2022-03-22'
+slug: my-hello-world-blog
+categories: []
+tags: []
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Hello, world! Welcome to my personal data science space. I've decided to contruct a website where I will implement and showcase various data science concepts in the form of a blog. Some of these posts will be dense, and consist of large scale projects. Some of these posts may be quick, showcasing a minor skill or tool. Either way, I figured it would be beneficial to start blogging as I expand my data science toolbox.
+
+At the time of starting this website, I am 24 years old and 3 months removed from graduating at the University of Wisconsin La Crosse with a MS in Applied Statistics and a BS in Statistics. I'm currently interning at U.S. Geological Survey as a data scientist. 
+
+Here's to the start of something new! Let's learn & have some fun.
